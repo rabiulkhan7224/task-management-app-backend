@@ -11,6 +11,8 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 connectDB()
+
+
 app.get('/',(req,res)=>{
     res.send(' task-manager Server running ')
 })
